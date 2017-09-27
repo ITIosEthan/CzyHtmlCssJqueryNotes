@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-简单的滚文字动</title>
+    <!--marquee标签:
+        scrollamount:表示运动速度 值是正整数 默认为6
+        scrolldelay:表示停顿时间 值是正整数 默认为0 单位是毫秒
+        direction:表示运动方向 值可以是left right up down 默认为left
+        onmouseover="this.stop()":表示鼠标移动到上边的时候停止运动
+        onmouseout="this.start()":表示鼠标离开的时候开始运动
+
+        behavior:表示滚动的方式 值可以是scroll连续滚动 slide滑动一次 alternate来回滚动
+        loop:表示循环的次数 默认无限循环
+        valign:表示元素的垂直对齐方式 值可以是top middle bottom 默认为middle
+        align:表示元素的水平对齐方式 值可以是absbottom绝对底部对齐 absmiddle  baseline底线对齐
+        bottom底部对齐 left top middle top texttop
+        bgcolor:表示运动区域的背景颜色 默认为白色
+        height、width:表示运动区域的宽度和高度
+        hspace、vspace:表示元素到边界的水平距离和垂直距离
+    -->
+</head>
+<body>
+
+    <div class="scroll_news">
+        <span>&nbsp;marquee标签-简单的滚文字动</span>
+        <marquee scrollamount="20" scrolldelay="0"  direction="right"
+                 hspace="100" vspace="100" loop="0"
+                 behavior="scroll" bgcolor="#00FF00"
+                 onmouseover="this.stop()"
+        onmouseout="this.start()" class="scroll_con">
+        <a href="http://www.baidu.com">&nbsp;百度新闻</a>
+        <a href="http://www.sina.com">&nbsp;新浪网</a>
+        </marquee>
+    </div>
+
+</body>
+</html>
