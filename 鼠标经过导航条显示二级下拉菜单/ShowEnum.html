@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标经过导航条，显示二级下拉菜单</title>
+    <link rel="stylesheet" href="EnumStyle.css">
+    <script src="jquery-3.2.1.js"></script>
+
+    <script>
+
+        <!--移动到li上给他添加一个背景颜色-->
+        $(document).ready(function () {
+
+            $('.ul>li').hover(function () {
+                $(this).addClass('active');
+            }, function () {
+                $(this).removeClass('active');
+            });
+        });
+
+
+        $(document).ready(function () {
+
+            $('.ul>li>a').click(function () {
+                $(this).parent().siblings().children().removeclass('active');
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('.ul>li').hover(function () {
+
+//                可以用fadeToggle等 可以省略一个回调
+                $(this).find('.xiala').slideDown();
+            }, function () {
+                $(this).find('.xiala').slideUp();
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('.ul>li>a').hover(function () {
+                $(this).addClass('active');
+            }, function () {
+                $(this).removeClass('active');
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+
+<ul class="ul" onclick="click()">
+    <li>
+        <a href="#" class="activea">首页</a>
+    </li>
+    <li>
+        <a href="#">关于我们</a>
+    </li>
+    <li>
+        <a href="javascript:void(0);">新闻中心</a>
+        <ul class="xiala">
+            <li>
+                <a href="http://www.baidu.com">百度</a>
+            </li>
+            <li>
+                <a href="http://www.sina.com">新浪</a>
+            </li>
+            <li>
+                <a href="https://www.github.com">github</a>
+            </li>
+            <li>
+                <a href="#">项目四</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">最新动态</a>
+        <ul class="xiala">
+            <li>
+                <a href="#">动态一</a>
+            </li>
+            <li>
+                <a href="#">动态二</a>
+            </li>
+            <li>
+                <a href="#">动态三</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">案例展示</a>
+    </li>
+    <li>
+        <a href="#">关于我们</a>
+    </li>
+</ul>
+
+
+
+</body>
+</html>

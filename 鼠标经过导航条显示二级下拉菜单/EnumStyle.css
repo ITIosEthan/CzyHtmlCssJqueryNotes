@@ -1,0 +1,72 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background: #666;
+}
+
+ul
+{
+    /*-webkit-padding-start: 0;*/
+}
+
+.ul
+{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    background: #3fd567;
+    font-size: 0;
+}
+
+.ul>li
+{
+    display: inline-block;
+    position: relative;
+}
+
+.ul>li>a
+{
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+    color: #fff;
+    transition: all .5s;
+    font-size: 15px;
+}
+
+.activea
+{
+    background: #d13c1e;
+}
+
+.active
+{
+    background: #000000;
+}
+
+.xiala
+{
+    position: absolute;
+    width: 100%;
+    background: #1e94d1;
+    display: none;
+}
+
+.xiala>li
+{
+    list-style: none;
+}
+
+.xiala>li>a
+{
+    padding: 8px 0;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
