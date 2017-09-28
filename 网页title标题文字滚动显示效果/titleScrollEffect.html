@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页title标题文字滚动显示效果</title>
+</head>
+<script language="JavaScript">
+    //定义文章的title;
+    var text = document.title;
+    //定义时间变量
+    var timeID;
+
+    function newText() {
+
+        //clearTimeout() 方法可取消由 setTimeout() 方法设置的 timeout。
+        clearTimeout(timeID);
+
+        //substring() 方法用于提取字符串中介于两个指定下标之间的字符。
+        document.title = text.substring(1, text.length)+text.substring(0,1);
+
+        text = document.title.substring(0, text.length);
+
+        //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+        timeID = setTimeout("newText()", 100);
+    }
+</script>
+<body onload="newText()">
+
+<br>预览效果请看标题栏 ↑<br>
+
+</body>
+</html>
