@@ -10,3 +10,6 @@
 
 #### 鼠标经过文字底部下划线动画
 ![鼠标经过文字底部下划线动画](https://github.com/ITIosEthan/CzyHtmlCssJqueryNotes/blob/master/%E9%BC%A0%E6%A0%87%E7%BB%8F%E8%BF%87%E6%96%87%E5%AD%97%E5%BA%95%E9%83%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E5%8A%A8%E7%94%BB/%E9%BC%A0%E6%A0%87%E7%BB%8F%E8%BF%87%E6%96%87%E5%AD%97%E5%BA%95%E9%83%A8%E4%B8%8B%E5%88%92%E7%BA%BF%E5%8A%A8%E7%94%BB.gif)
+
+#### 网页title标题文字滚动显示效果
+![网页title标题文字滚动显示效果](https://github.com/ITIosEthan/CzyHtmlCssJqueryNotes/blob/master/%E7%BD%91%E9%A1%B5title%E6%A0%87%E9%A2%98%E6%96%87%E5%AD%97%E6%BB%9A%E5%8A%A8%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C/%E7%BD%91%E9%A1%B5title%E6%A0%87%E9%A2%98%E6%96%87%E5%AD%97%E6%BB%9A%E5%8A%A8%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C.gif)
